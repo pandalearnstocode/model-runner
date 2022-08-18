@@ -36,3 +36,9 @@ jobs:
       run: |
         echo "Branch: ${{ steps.vars.outputs.branch }}"
         echo "Sha: ${{ steps.vars.outputs.sha_short }}"
+        echo "country: ${{ github.event.inputs.country }}"
+        echo "brand: ${{ github.event.inputs.brand }}"
+        echo "rc_level: ${{ github.event.inputs.rc_level }}" 
+        echo "year: ${{ github.event.inputs.year }}" 
+        echo "period: ${{ github.event.inputs.period }}" 
+        echo "period_value: ${{ github.event.inputs.period_value }}" 
