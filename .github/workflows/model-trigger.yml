@@ -45,4 +45,6 @@ jobs:
         echo "rc_level: ${{ github.event.inputs.rc_level }}" 
         echo "year: ${{ github.event.inputs.year }}" 
         echo "period: ${{ github.event.inputs.period }}" 
-        echo "period_value: ${{ github.event.inputs.period_value }}" 
+        echo "period_value: ${{ github.event.inputs.period_value }}"
+        python app.py run-modelling --env ${{ steps.vars.outputs.branch }} --country ${{ github.event.inputs.country }} --brand ${{ github.event.inputs.brand }} --rc-level ${{ github.event.inputs.rc_level }} --year ${{ github.event.inputs.year }} --period ${{ github.event.inputs.period }} --period-value ${{ github.event.inputs.period_value }} --commit-id ${{ steps.vars.outputs.sha_short }}
+      
