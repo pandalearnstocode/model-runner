@@ -1,5 +1,25 @@
 name: Model Trigger 
-on: [push, workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+        country:
+            description: 'Country for which model will be executed'
+            required: true
+        brand:
+            description: 'Brand from the above country: skol, all'
+            required: true
+        rc_level:
+            description: 'RC levels: brand, imp, portfolio'
+            required: true
+        year:
+            description: 'Model year'
+            required: true
+        period:
+            description: 'Model period: monthly, quarterly'
+            required: true
+        period_value:
+            description: 'Model period value: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12'
+            required: true
 jobs:   
   build:
     runs-on: ubuntu-latest
