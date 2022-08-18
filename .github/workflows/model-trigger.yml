@@ -3,22 +3,22 @@ on:
   workflow_dispatch:
     inputs:
         country:
-            description: 'Country for which model will be executed'
+            description: 'Enter country: us'
             required: true
         brand:
-            description: 'Brand from the above country: skol, all'
+            description: 'Enter brand: skol, all'
             required: true
         rc_level:
             description: 'RC levels: brand, imp, portfolio'
             required: true
         year:
-            description: 'Model year'
+            description: 'Model year: 2022'
             required: true
         period:
             description: 'Model period: monthly, quarterly'
             required: true
         period_value:
-            description: 'Model period value: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12'
+            description: 'Model period value: 1, 2, 3, 4, 5, 6'
             required: true
 jobs:   
   build:
