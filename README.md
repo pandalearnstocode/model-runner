@@ -1,13 +1,3 @@
-```python
-env:str = "develop"
-country: str = "us"
-brand: str = "skol" # "skol","all"
-rc_level: str = "brand" # "imp", "portfolio"
-year: int = 2020
-period: str = "monthly" # "monthly", "quarterly"
-period_value: int = 1 # 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-```
-
 # __Model trigger using GitHub actions workflow dispatcher + API__
 
 Here we will run model in github action using two methods,
@@ -27,6 +17,16 @@ While executing the model following things will happen,
 * Rest of the flow of the application remains as is.
 
 ## __Parameters:__
+
+```python
+env:str = "develop"
+country: str = "us"
+brand: str = "skol" # "skol","all"
+rc_level: str = "brand" # "imp", "portfolio"
+year: int = 2020
+period: str = "monthly" # "monthly", "quarterly"
+period_value: int = 1 # 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+```
 
 ```yaml
 inputs:
