@@ -67,7 +67,7 @@ def _get_model():
 
 
 def _train_model(model, X_train_scaled, y_train):
-    history = model.fit(X_train_scaled, y_train, epochs=100)
+    history = model.fit(X_train_scaled, y_train, epochs=10)
     return history, model
 
 
