@@ -1,5 +1,25 @@
 # __Model trigger using GitHub actions workflow dispatcher + API__
 
+## __Directory structure of the repository__
+
+```bash
+.
+├── app.py
+├── data.csv
+├── develop
+│   ├── data
+│   │   ├── input
+│   │   └── output
+│   └── model_object
+├── __init__.py
+├── README.md
+├── requirements.txt
+└── train.py
+
+5 directories, 6 files
+```
+## __Details about the repository__
+
 Here we will run model in github action using two methods,
 
 * Workflow dispatcher
