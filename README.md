@@ -72,3 +72,12 @@ python app.py run-simulation --rc-id 1_adfd10caf2b78e08a190fdb187ef5f24_us_skol_
 ```
 
 __Note:__ `1_adfd10caf2b78e08a190fdb187ef5f24_us_skol_brand_2020_monthly_1` this value refers a unique identifier for the model or a response curve.
+
+
+```bash
+conda create -n model_runner python=3.8 -y
+conda activate model_runner
+pip install -r requirements.txt
+conda deactivate
+```
+
